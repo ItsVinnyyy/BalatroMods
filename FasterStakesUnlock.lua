@@ -10,7 +10,7 @@
 -- Modify NB_RANKS_BELOW_WIN_TO_UNLOCK as you want. 
 -- Default is 2, so winning with the 4th stake unlocks 2nd stake for all decks.
 -- Set to -1 to have the same stakes unlocked for all decks, so winning with the 4th stake unlocks the 5th stake for all decks.
-local NB_RANKS_BELOW_WIN_TO_UNLOCK = 2
+local NB_RANKS_BELOW_WIN_TO_UNLOCK = -1
 
 local function get_min_stake_available()
   local highest_win, _lowest_win = get_deck_win_stake()
